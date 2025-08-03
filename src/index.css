@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+  --breakpoint-3xl: 120rem;
+  --color-primary: #3399FF;
+
+
+}
+
+
+@layer utilities {
+  .container {
+    @apply max-w-[95%] mx-auto px-5 md:px-7 lg:px-15 xl:max-w-[85%];
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
